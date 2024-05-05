@@ -1,0 +1,92 @@
+@import "../nulstyle";
+@import "../styletext.scss";
+
+.authorization {
+    width: 100%;
+    height: 100vh;
+    background: url("../../public/img/icon.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+    &__body {
+        width: 50vh;
+        height: 47.5vh;
+        background-color: white;
+        border-radius: 5vh;
+        margin: 0 auto;
+        box-shadow: 0 0vh 5vh 1vh rgb(255, 255, 255);
+    }
+    &__form {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1.5vh;
+    }
+    &__name {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+    &__name-text {
+        font-size: 3vh;
+        font-weight: 500;
+    }
+    &__library-img {
+        width: 4vh;
+        height: 4vh;
+        background: url("../../public/img/library-icon.png") no-repeat center;
+        background-size: contain;
+        margin-left: 1.5vh;
+    }
+    &__items {
+        margin-top: 6vh;
+        text-align: center;
+    }
+    &__input {
+        width: 35vh;
+        height: 5vh;
+        margin-bottom: 6vh;
+        padding-left: 1.5vh;
+        border-radius: 3vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 2vh;
+        &::placeholder {
+            font-size: 1.8vh;
+            color: white;
+        }
+    }
+    &__registration {
+        font-size: 2vh;
+        color: black;
+        line-height: 2.5vh;
+        margin-top: -1.5vh;
+    }
+    &__link {
+        font-size: 2vh;
+        color: black;
+        transition: 0.3s;
+        text-decoration: underline;
+        &:hover {
+            transition: 0.3s;
+            color: rgb(190, 35, 131);
+            text-decoration: none;
+        }
+    }
+    &__input-submit {
+        width: 11vh;
+        border: 0.8vh solid rgb(58, 178, 235);
+        background-color: rgb(58, 178, 235);
+        color: white;
+        cursor: pointer;
+        font-size: 2vh;
+        margin-top: 3vh;
+        border-radius: 2vh;
+        transition: 0.6s;
+        &:hover {
+            transition: 0.6s;
+            border: 0.8vh solid rgb(31, 84, 109);
+            background-color: rgb(31, 84, 109);
+        }
+    }
+}

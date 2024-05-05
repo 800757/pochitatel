@@ -1,0 +1,67 @@
+@import "../../_nulstyle.scss";
+@import "../../styletext.scss";
+
+.admirer {
+  width: 100%;
+  min-height: 24vh;
+  margin-bottom: 5vh;
+  &__header {
+    width: 90%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 3vh;
+  }
+  &__name {
+    display: flex;
+    align-items: end;
+  }
+  &__name-text {
+    font-size: 3.5vh;
+    font-weight: 500;
+  }
+  &__library-img {
+    width: 5vh;
+    height: 5vh;
+    background: url("../../../public/img/library-icon.png") no-repeat center;
+    background-size: contain;
+    margin-left: 1.5vh;
+  }
+  &__space-img {
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    background: url("../../../public/img/space-icon.png") no-repeat center;
+    background-size: contain;
+    transform: rotate(-40deg);
+  }
+  &__space-text {
+    width: 80%;
+    font-size: 3vh;
+    position: absolute;
+    top: 23vh;
+    right: 10vh;
+    text-align: center;
+    transform: rotate(40deg);
+    font-weight: 300;
+    transition: 0.5s;
+  }
+  &__account {
+    border: 2vh solid rgb(58, 178, 235);
+    background-color: rgb(58, 178, 235);
+    border-radius: 3vh;
+    transition: 0.4s;
+    &:hover {
+      transition: 0.4s;
+      border: 2vh solid rgb(31, 84, 109);
+      background-color: rgb(31, 84, 109);
+    }
+  }
+  &__authorization {
+    color: white;
+    font-weight: 500;
+    font-size: 2vh;
+  }
+}
